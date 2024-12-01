@@ -1,5 +1,3 @@
-import { revalidatePath } from 'next/cache';
-import { redirect } from 'next/navigation';
 import { Revenue } from './definitions';
 
 export const formatCurrency = (amount: number) => {
@@ -69,10 +67,3 @@ export const generatePagination = (currentPage: number, totalPages: number) => {
     totalPages,
   ];
 };
-
-export const invoicePath = '/dashboard/invoices';
-
-export function redirectToInvoice() {
-  revalidatePath(invoicePath);
-  redirect(invoicePath);
-}
