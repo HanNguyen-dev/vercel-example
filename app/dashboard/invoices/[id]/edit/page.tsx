@@ -30,7 +30,7 @@ export default async function Page(props: IEditInvoice) {
           },
           {
             label: 'Edit Invoice',
-            href: '/dashboard/invoices/${id}/edit',
+            href: `/dashboard/invoices/${id}/edit`,
             active: true,
           },
         ]}
